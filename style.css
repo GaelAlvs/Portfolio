@@ -409,7 +409,7 @@ footer .line-footer p a{
         margin: 0 auto;
     }
 
-    section.portfolio .flex {
+    section.portfolio > .flex {
         gap: 60px;
     }
 
