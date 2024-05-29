@@ -338,6 +338,10 @@ footer .line-footer p a{
     
     /*Classes gerais*/
 
+    .flex {
+        flex-direction: column;
+    }
+
     .topo-do-site .flex {
         flex-direction: column-reverse;
     }
@@ -409,7 +413,7 @@ footer .line-footer p a{
         margin: 0 auto;
     }
 
-    section.portfolio > .flex {
+    section.portfolio .flex {
         gap: 60px;
     }
 
