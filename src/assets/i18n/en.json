@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "timeline": "Journey",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Frontend Engineer",
+    "subtitle": "I build fast, accessible, and well-architected interfaces.",
+    "cta_projects": "See projects",
+    "cta_contact": "Get in touch"
+  },
+  "about": {
+    "title": "About me",
+    "body": "I'm a Frontend Engineer passionate about performance and design systems. I started self-teaching in 2021, studied at Alura, enrolled in a Computer Science degree, and today I work as a Frontend Engineer intern. I was also a programming and robotics instructor at Ctrl+Play — an experience that taught me as much as writing code."
+  },
+  "skills": { "title": "Skills" },
+  "projects": { "title": "Projects", "demo": "Demo", "code": "Code" },
+  "timeline": { "title": "Journey" },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Open to opportunities and freelance work.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Message",
+    "send": "Send message"
+  }
+}

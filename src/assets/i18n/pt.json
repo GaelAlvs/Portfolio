@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "timeline": "Trajetória",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "title": "Frontend Engineer",
+    "subtitle": "Construo interfaces rápidas, acessíveis e bem arquitetadas.",
+    "cta_projects": "Ver projetos",
+    "cta_contact": "Entre em contato"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "body": "Sou um Frontend Engineer apaixonado por performance e design systems. Comecei estudando por conta própria em 2021, passei pela Alura, entrei na faculdade de Ciência da Computação e hoje estagio como desenvolvedor Frontend. Fui instrutor de programação e robótica pela Ctrl+Play — experiência que me ensinou tanto quanto escrever código."
+  },
+  "skills": { "title": "Habilidades" },
+  "projects": { "title": "Projetos", "demo": "Demo", "code": "Código" },
+  "timeline": { "title": "Trajetória" },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Aberto a oportunidades e freelas.",
+    "name": "Seu nome",
+    "email": "Seu e-mail",
+    "message": "Mensagem",
+    "send": "Enviar mensagem"
+  }
+}
