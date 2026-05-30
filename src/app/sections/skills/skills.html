@@ -1,1 +1,89 @@
-<p>skills works!</p>
+<section id="skills" class="py-24 px-6 border-t border-neutral-100 dark:border-neutral-900">
+  <div class="max-w-5xl mx-auto flex flex-col gap-10">
+    <!-- Header -->
+    <div class="flex flex-col gap-2">
+      <span class="text-xs font-medium text-sky-500 tracking-widest uppercase">
+        {{ 'skills.title' | translate }}
+      </span>
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+        O que uso no dia a dia, o que domino e o que estou aprendendo.
+      </p>
+    </div>
+
+    <!-- Legend -->
+    <div class="flex items-center gap-6 flex-wrap">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+        <span class="text-xs text-neutral-500 dark:text-neutral-400">Uso no dia a dia</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-neutral-300 dark:bg-neutral-600"></span>
+        <span class="text-xs text-neutral-500 dark:text-neutral-400">Conheço bem</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+        <span class="text-xs text-neutral-500 dark:text-neutral-400">Aprendendo</span>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex gap-2 flex-wrap">
+      @for (f of filters; track f.key) {
+        <button
+          (click)="setFilter(f.key)"
+          class="h-8 px-4 rounded-full text-xs font-medium border transition-all"
+          [class.active-filter]="activeFilter === f.key"
+          [class.inactive-filter]="activeFilter !== f.key"
+        >
+          {{ f.label }}
+        </button>
+      }
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      @for (cat of filtered; track cat.titleKey) {
+        <div
+          class="flex flex-col gap-4 p-5 rounded-xl border border-neutral-100 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900"
+        >
+          <!-- Category header -->
+          <div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400">
+            <span [innerHTML]="safeIcon(cat.icon)"></span>
+            <span class="text-xs font-medium text-neutral-700 dark:text-neutral-300">{{
+              cat.titleKey
+            }}</span>
+          </div>
+
+          <!-- Pills -->
+          <div class="flex flex-wrap gap-2">
+            @for (skill of cat.skills; track skill.name) {
+              <div class="relative group">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium cursor-default transition-all"
+                  [class]="levelClass(skill.level)"
+                >
+                  <span
+                    class="w-1.5 h-1.5 rounded-full"
+                    [class.bg-sky-500]="skill.level === 'core'"
+                    [class.bg-neutral-400]="skill.level === 'known'"
+                    [class.bg-amber-400]="skill.level === 'learning'"
+                  ></span>
+                  {{ skill.name }}
+                </span>
+                <!-- Tooltip -->
+                <div
+                  class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 px-3 py-2 rounded-lg bg-neutral-900 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-900 text-xs leading-relaxed opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-10 text-center"
+                >
+                  {{ skill.tooltip }}
+                  <div
+                    class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-neutral-900 dark:border-t-neutral-100"
+                  ></div>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+.timeline-work {
+  background-color: #0ea5e9;
+}
+
+.timeline-education {
+  background-color: #8b5cf6;
+}
+
+.timeline-study {
+  background-color: #10b981;
+}
+
+.timeline-work-badge {
+  background-color: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #e0f2fe;
+}
+
+html.dark .timeline-work-badge {
+  background-color: #082f49;
+  color: #7dd3fc;
+  border-color: #0c4a6e;
+}
+
+.timeline-education-badge {
+  background-color: #f5f3ff;
+  color: #6d28d9;
+  border: 1px solid #ede9fe;
+}
+
+html.dark .timeline-education-badge {
+  background-color: #2e1065;
+  color: #c4b5fd;
+  border-color: #4c1d95;
+}
+
+.timeline-study-badge {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #dcfce7;
+}
+
+html.dark .timeline-study-badge {
+  background-color: #052e16;
+  color: #86efac;
+  border-color: #14532d;
+}

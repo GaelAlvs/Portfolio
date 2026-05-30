@@ -1,5 +1,13 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+}
 
 @layer base {
   html {
@@ -8,10 +16,15 @@
   }
 
   body {
-    @apply bg-white text-neutral-900 transition-colors duration-300;
+    background-color: white;
+    color: #171717;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
   }
 
   html.dark body {
-    @apply bg-neutral-950 text-neutral-100;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
   }
 }

@@ -8,8 +8,9 @@ import { routes } from './app.routes';
 class CustomTranslateLoader implements TranslateLoader {
   constructor(private http: HttpClient) {}
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getTranslation(lang: string): Observable<any> {
-    return this.http.get(`/assets/i18n/${lang}.json`);
+    return this.http.get(`/i18n/${lang}.json`);
   }
 }
 
