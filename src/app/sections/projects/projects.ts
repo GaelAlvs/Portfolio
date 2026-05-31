@@ -46,7 +46,7 @@ export class ProjectsComponent {
       descriptionEn:
         'Personal finance manager with authentication, expense dashboard and own Java backend with PostgreSQL database.',
       tags: ['Angular', 'Tailwind', 'Java', 'PostgreSQL', 'Railway'],
-      demo: 'https://moneywise-chi.vercel.app/auth/login',
+      demo: 'https://moneywise-chi.vercel.app/dashboard',
       preview: 'https://moneywise-chi.vercel.app',
       github: 'https://github.com/GaelAlvs',
       highlight: true,
