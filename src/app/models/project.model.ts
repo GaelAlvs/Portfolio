@@ -6,4 +6,5 @@ export interface Project {
   demo: string;
   github: string;
   highlight?: boolean;
+  preview?: string;
 }
