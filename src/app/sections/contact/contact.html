@@ -158,9 +158,11 @@
             </svg>
           </div>
           <p class="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-            Mensagem enviada!
+            {{ 'contact.sent_title' | translate }}
           </p>
-          <p class="text-xs text-neutral-500 dark:text-neutral-400">Responderei em breve.</p>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400">
+            {{ 'contact.sent_subtitle' | translate }}
+          </p>
         </div>
       } @else {
         <form (ngSubmit)="onSubmit()" class="flex flex-col gap-4">

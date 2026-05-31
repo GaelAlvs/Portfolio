@@ -15,17 +15,50 @@
   },
   "about": {
     "title": "About me",
-    "body": "I'm a Frontend Engineer passionate about performance and design systems. I started self-teaching in 2021, studied at Alura, enrolled in a Computer Science degree, and today I work as a Frontend Engineer intern. I was also a programming and robotics instructor at Ctrl+Play — an experience that taught me as much as writing code."
+    "body": "I'm a Frontend Engineer passionate about performance and design systems. I started self-teaching in 2021, studied at Alura, enrolled in a Computer Science degree, and today I work as a Frontend Engineer intern. I was also a programming and robotics instructor at Ctrl+Play — an experience that taught me as much as writing code.",
+    "stat_years": "Years studying tech",
+    "stat_projects": "Portfolio projects",
+    "stat_instructor": "Instructor at Ctrl+Play",
+    "stat_current": "Interning in Frontend"
   },
-  "skills": { "title": "Skills" },
-  "projects": { "title": "Projects", "demo": "Demo", "code": "Code" },
-  "timeline": { "title": "Journey" },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "What I use daily, what I know well, and what I'm learning.",
+    "legend_core": "Daily use",
+    "legend_known": "Know well",
+    "legend_learning": "Learning",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "ui": "UI / Design",
+      "tools": "Tools",
+      "concepts": "Concepts"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Real projects, studies, and client work.",
+    "highlight_label": "Featured",
+    "others_label": "Other projects",
+    "demo": "Demo",
+    "code": "Code"
+  },
+  "timeline": {
+    "title": "Journey",
+    "subtitle": "From self-taught to engineer — every step matters.",
+    "current_label": "Current",
+    "type_work": "Work",
+    "type_education": "University",
+    "type_study": "Study"
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Open to opportunities and freelance work.",
     "name": "Your name",
     "email": "Your email",
     "message": "Message",
-    "send": "Send message"
+    "send": "Send message",
+    "sent_title": "Message sent!",
+    "sent_subtitle": "I'll get back to you soon."
   }
 }

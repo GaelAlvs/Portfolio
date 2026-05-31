@@ -15,17 +15,50 @@
   },
   "about": {
     "title": "Sobre mim",
-    "body": "Sou um Frontend Engineer apaixonado por performance e design systems. Comecei estudando por conta própria em 2021, passei pela Alura, entrei na faculdade de Ciência da Computação e hoje estagio como desenvolvedor Frontend. Fui instrutor de programação e robótica pela Ctrl+Play — experiência que me ensinou tanto quanto escrever código."
+    "body": "Sou um Frontend Engineer apaixonado por performance e design systems. Comecei estudando por conta própria em 2021, passei pela Alura, entrei na faculdade de Ciência da Computação e hoje estagio como desenvolvedor Frontend. Fui instrutor de programação e robótica pela Ctrl+Play — experiência que me ensinou tanto quanto escrever código.",
+    "stat_years": "Anos estudando tecnologia",
+    "stat_projects": "Projetos no portfólio",
+    "stat_instructor": "Instrutor Ctrl+Play",
+    "stat_current": "Estagiando em Frontend"
   },
-  "skills": { "title": "Habilidades" },
-  "projects": { "title": "Projetos", "demo": "Demo", "code": "Código" },
-  "timeline": { "title": "Trajetória" },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "O que uso no dia a dia, o que domino e o que estou aprendendo.",
+    "legend_core": "Uso no dia a dia",
+    "legend_known": "Conheço bem",
+    "legend_learning": "Aprendendo",
+    "filters": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "ui": "UI / Design",
+      "tools": "Ferramentas",
+      "concepts": "Conceitos"
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Projetos reais, de estudo e para clientes.",
+    "highlight_label": "Destaque",
+    "others_label": "Outros projetos",
+    "demo": "Demo",
+    "code": "Código"
+  },
+  "timeline": {
+    "title": "Trajetória",
+    "subtitle": "De autodidata a engenheiro — cada passo importa.",
+    "current_label": "Atual",
+    "type_work": "Trabalho",
+    "type_education": "Faculdade",
+    "type_study": "Estudo"
+  },
   "contact": {
     "title": "Contato",
     "subtitle": "Aberto a oportunidades e freelas.",
     "name": "Seu nome",
     "email": "Seu e-mail",
     "message": "Mensagem",
-    "send": "Enviar mensagem"
+    "send": "Enviar mensagem",
+    "sent_title": "Mensagem enviada!",
+    "sent_subtitle": "Responderei em breve."
   }
 }

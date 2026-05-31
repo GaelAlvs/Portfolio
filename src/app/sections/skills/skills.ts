@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { LanguageService } from '../../services/language.service';
 
 interface Skill {
   name: string;
@@ -11,6 +12,7 @@ interface Skill {
 interface SkillCategory {
   icon: string;
   titleKey: string;
+  titleEn: string;
   cat: string;
   skills: Skill[];
 }
@@ -26,23 +28,25 @@ export class SkillsComponent {
   activeFilter = 'all';
 
   private sanitizer = inject(DomSanitizer);
+  lang = inject(LanguageService);
 
   safeIcon(icon: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(icon);
   }
 
   filters = [
-    { key: 'all', label: 'Todos' },
-    { key: 'frontend', label: 'Frontend' },
-    { key: 'ui', label: 'UI / Design' },
-    { key: 'tools', label: 'Ferramentas' },
-    { key: 'concepts', label: 'Conceitos' },
+    { key: 'all', labelKey: 'skills.filters.all' },
+    { key: 'frontend', labelKey: 'skills.filters.frontend' },
+    { key: 'ui', labelKey: 'skills.filters.ui' },
+    { key: 'tools', labelKey: 'skills.filters.tools' },
+    { key: 'concepts', labelKey: 'skills.filters.concepts' },
   ];
 
   categories: SkillCategory[] = [
     {
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
       titleKey: 'Framework & Linguagem',
+      titleEn: 'Framework & Language',
       cat: 'frontend',
       skills: [
         {
@@ -76,6 +80,7 @@ export class SkillsComponent {
     {
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>`,
       titleKey: 'Estilo & UI',
+      titleEn: 'Style & UI',
       cat: 'ui',
       skills: [
         {
@@ -108,6 +113,7 @@ export class SkillsComponent {
     {
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
       titleKey: 'Performance',
+      titleEn: 'Performance',
       cat: 'concepts',
       skills: [
         {
@@ -140,6 +146,7 @@ export class SkillsComponent {
     {
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>`,
       titleKey: 'Arquitetura',
+      titleEn: 'Architecture',
       cat: 'concepts',
       skills: [
         {
@@ -172,6 +179,7 @@ export class SkillsComponent {
     {
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
       titleKey: 'Ferramentas',
+      titleEn: 'Tools',
       cat: 'tools',
       skills: [
         {
@@ -200,6 +208,7 @@ export class SkillsComponent {
     {
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>`,
       titleKey: 'Boas Práticas',
+      titleEn: 'Best Practices',
       cat: 'concepts',
       skills: [
         {

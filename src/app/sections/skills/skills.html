@@ -6,7 +6,7 @@
         {{ 'skills.title' | translate }}
       </span>
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
-        O que uso no dia a dia, o que domino e o que estou aprendendo.
+        {{ 'skills.subtitle' | translate }}
       </p>
     </div>
 
@@ -14,15 +14,21 @@
     <div class="flex items-center gap-6 flex-wrap">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-sky-500"></span>
-        <span class="text-xs text-neutral-500 dark:text-neutral-400">Uso no dia a dia</span>
+        <span class="text-xs text-neutral-500 dark:text-neutral-400">{{
+          'skills.legend_core' | translate
+        }}</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-neutral-300 dark:bg-neutral-600"></span>
-        <span class="text-xs text-neutral-500 dark:text-neutral-400">Conheço bem</span>
+        <span class="text-xs text-neutral-500 dark:text-neutral-400">{{
+          'skills.legend_known' | translate
+        }}</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-        <span class="text-xs text-neutral-500 dark:text-neutral-400">Aprendendo</span>
+        <span class="text-xs text-neutral-500 dark:text-neutral-400">{{
+          'skills.legend_learning' | translate
+        }}</span>
       </div>
     </div>
 
@@ -35,7 +41,7 @@
           [class.active-filter]="activeFilter === f.key"
           [class.inactive-filter]="activeFilter !== f.key"
         >
-          {{ f.label }}
+          {{ f.labelKey | translate }}
         </button>
       }
     </div>
@@ -49,9 +55,9 @@
           <!-- Category header -->
           <div class="flex items-center gap-2 text-neutral-500 dark:text-neutral-400">
             <span [innerHTML]="safeIcon(cat.icon)"></span>
-            <span class="text-xs font-medium text-neutral-700 dark:text-neutral-300">{{
-              cat.titleKey
-            }}</span>
+            <span class="text-xs font-medium text-neutral-700 dark:text-neutral-300">
+              {{ lang.current() === 'en' ? cat.titleEn : cat.titleKey }}
+            </span>
           </div>
 
           <!-- Pills -->

@@ -36,7 +36,7 @@
       <!-- Social links -->
       <div class="flex items-center gap-4 pt-2">
         <a
-          href="https://github.com/"
+          href="https://github.com/GaelAlvs"
           target="_blank"
           rel="noopener noreferrer"
           class="text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
@@ -55,7 +55,7 @@
           </svg>
         </a>
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/bielalves/"
           target="_blank"
           rel="noopener noreferrer"
           class="text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
@@ -73,25 +73,186 @@
             />
           </svg>
         </a>
+        <a
+          href="https://wa.me/5511975099439"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-neutral-400 hover:text-green-500 transition-colors"
+          aria-label="WhatsApp"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+            />
+          </svg>
+        </a>
       </div>
     </div>
 
-    <!-- Avatar / Visual -->
+    <!-- Ilustração geométrica -->
     <div class="hidden md:flex justify-center items-center">
-      <div class="relative w-64 h-64">
-        <!-- Decorative ring -->
-        <div
-          class="absolute inset-0 rounded-full border border-neutral-200 dark:border-neutral-800 scale-110"
-        ></div>
-        <div
-          class="absolute inset-0 rounded-full border border-neutral-100 dark:border-neutral-900 scale-125"
-        ></div>
-        <!-- Avatar placeholder -->
-        <div
-          class="w-full h-full rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-5xl font-semibold text-neutral-300 dark:text-neutral-600 select-none"
-        >
-          G
-        </div>
+      <div class="relative w-72 h-72">
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+          <!-- Anel externo girando devagar -->
+          <circle
+            cx="150"
+            cy="150"
+            r="130"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="0.5"
+            class="text-neutral-200 dark:text-neutral-800"
+            stroke-dasharray="12 8"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 150 150"
+              to="360 150 150"
+              dur="40s"
+              repeatCount="indefinite"
+            />
+          </circle>
+
+          <!-- Anel médio girando ao contrário -->
+          <circle
+            cx="150"
+            cy="150"
+            r="100"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="0.5"
+            class="text-neutral-300 dark:text-neutral-700"
+            stroke-dasharray="6 10"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 150 150"
+              to="-360 150 150"
+              dur="25s"
+              repeatCount="indefinite"
+            />
+          </circle>
+
+          <!-- Hexágono central -->
+          <polygon
+            points="150,80 210,115 210,185 150,220 90,185 90,115"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            class="text-neutral-300 dark:text-neutral-700"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 150 150"
+              to="360 150 150"
+              dur="60s"
+              repeatCount="indefinite"
+            />
+          </polygon>
+
+          <!-- Ponto orbitando anel externo -->
+          <circle r="4" fill="#0ea5e9">
+            <animateMotion dur="8s" repeatCount="indefinite">
+              <mpath href="#orbit-outer" />
+            </animateMotion>
+          </circle>
+          <path id="orbit-outer" d="M 150,20 A 130,130 0 1,1 149.99,20" fill="none" />
+
+          <!-- Ponto orbitando anel médio -->
+          <circle r="3" fill="#0ea5e9" opacity="0.5">
+            <animateMotion
+              dur="5s"
+              repeatCount="indefinite"
+              keyPoints="1;0"
+              keyTimes="0;1"
+              calcMode="linear"
+            >
+              <mpath href="#orbit-middle" />
+            </animateMotion>
+          </circle>
+          <path id="orbit-middle" d="M 150,50 A 100,100 0 1,1 149.99,50" fill="none" />
+
+          <!-- Círculo central -->
+          <circle
+            cx="150"
+            cy="150"
+            r="36"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            class="text-neutral-200 dark:text-neutral-800"
+          />
+
+          <!-- Texto central -->
+          <text
+            x="150"
+            y="145"
+            text-anchor="middle"
+            font-family="Inter, sans-serif"
+            font-size="11"
+            font-weight="500"
+            class="fill-neutral-400 dark:fill-neutral-500"
+          >
+            Frontend
+          </text>
+          <text
+            x="150"
+            y="162"
+            text-anchor="middle"
+            font-family="Inter, sans-serif"
+            font-size="11"
+            font-weight="500"
+            fill="#0ea5e9"
+          >
+            Engineer
+          </text>
+
+          <!-- Pontos nos vértices do hexágono -->
+          <circle cx="150" cy="80" r="3" fill="#0ea5e9" opacity="0.6" />
+          <circle cx="210" cy="115" r="2" fill="#0ea5e9" opacity="0.4" />
+          <circle cx="210" cy="185" r="2" fill="#0ea5e9" opacity="0.4" />
+          <circle cx="150" cy="220" r="3" fill="#0ea5e9" opacity="0.6" />
+          <circle cx="90" cy="185" r="2" fill="#0ea5e9" opacity="0.4" />
+          <circle cx="90" cy="115" r="2" fill="#0ea5e9" opacity="0.4" />
+
+          <!-- Linhas de conexão dos vértices ao centro -->
+          <line
+            x1="150"
+            y1="114"
+            x2="150"
+            y2="80"
+            stroke="#0ea5e9"
+            stroke-width="0.5"
+            opacity="0.3"
+          />
+          <line
+            x1="150"
+            y1="114"
+            x2="210"
+            y2="115"
+            stroke="#0ea5e9"
+            stroke-width="0.5"
+            opacity="0.2"
+          />
+          <line
+            x1="150"
+            y1="114"
+            x2="90"
+            y2="115"
+            stroke="#0ea5e9"
+            stroke-width="0.5"
+            opacity="0.2"
+          />
+        </svg>
       </div>
     </div>
   </div>

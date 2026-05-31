@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Project } from '../../models/project.model';
 
 @Component({
@@ -10,6 +10,8 @@ import { Project } from '../../models/project.model';
   styleUrl: './projects.css',
 })
 export class ProjectsComponent {
+  translate = inject(TranslateService);
+
   projects: Project[] = [
     {
       title: 'MovieHub',
