@@ -15,11 +15,11 @@
   },
   "about": {
     "title": "About me",
-    "body": "I'm a Frontend Engineer passionate about performance and design systems. I started self-teaching in 2021, studied at Alura, enrolled in a Computer Science degree, and today I work as a Frontend Engineer intern. I was also a programming and robotics instructor at Ctrl+Play — an experience that taught me as much as writing code.",
+    "body": "I'm a Frontend Engineer focused on performance and design. I started learning on my own in 2021, then continued my studies through Alura, enrolled in a Computer Science degree program, and currently work as a Frontend Developer. I have also worked as a programming and robotics instructor at Ctrl+Play and have built a portfolio of personal and client projects. I am always looking for opportunities to learn and grow in the technology field.",
     "stat_years": "Years studying tech",
     "stat_projects": "Portfolio projects",
     "stat_instructor": "Programming Instructor",
-    "stat_current": "Interning in Frontend"
+    "stat_current": "Frontend Development"
   },
   "skills": {
     "title": "Skills",

@@ -15,11 +15,11 @@
   },
   "about": {
     "title": "Sobre mim",
-    "body": "Sou um Frontend Engineer apaixonado por performance e design systems. Comecei estudando por conta própria em 2021, passei pela Alura, entrei na faculdade de Ciência da Computação e hoje estagio como desenvolvedor Frontend. Fui instrutor de programação e robótica pela Ctrl+Play — experiência que me ensinou tanto quanto escrever código.",
+    "body": "Sou um Frontend Engineer focado por performance e design. Comecei estudando por conta própria em 2021, passei pela Alura, entrei na faculdade de Ciência da Computação e hoje trabalho como desenvolvedor Frontend. Fui instrutor de programação e robótica pela Ctrl+Play e tenho um portfólio de projetos pessoais e para clientes. Estou sempre buscando aprender e crescer na área de tecnologia.",
     "stat_years": "Anos estudando tecnologia",
     "stat_projects": "Projetos no portfólio",
     "stat_instructor": "Instrutor de Programação",
-    "stat_current": "Estagiando em Frontend"
+    "stat_current": "Desenvolvimento Frontend"
   },
   "skills": {
     "title": "Habilidades",
