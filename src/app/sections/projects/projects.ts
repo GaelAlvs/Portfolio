@@ -22,7 +22,7 @@ export class ProjectsComponent {
       descriptionEn:
         'Consumes the TMDB API to search movies and series, bookmark titles, check available platforms and navigate fully responsive.',
       tags: ['Angular', 'Tailwind', 'TypeScript', 'REST API'],
-      demo: 'https://movie-hub-seven-tau.vercel.app/tv/273240',
+      demo: 'https://movie-hub-seven-tau.vercel.app',
       preview: 'https://movie-hub-seven-tau.vercel.app',
       github: 'https://github.com/GaelAlvs',
       highlight: true,
@@ -76,9 +76,9 @@ export class ProjectsComponent {
     {
       title: 'HBO Max Clone',
       description:
-        'Recriação do site da HBO Max com HTML e CSS puros — projeto de estudo focado em fidelidade visual e responsividade.',
+        'Recriação do site da HBO Max com HTML e CSS puros, projeto de estudo focado em fidelidade visual e responsividade.',
       descriptionEn:
-        'HBO Max website recreation with pure HTML and CSS — study project focused on visual fidelity and responsiveness.',
+        'HBO Max website recreation with pure HTML and CSS study, project focused on visual fidelity and responsiveness.',
       tags: ['HTML', 'CSS'],
       demo: 'https://gaelalvs.github.io/SiteHboMax/',
       preview: 'https://gaelalvs.github.io/SiteHboMax',
