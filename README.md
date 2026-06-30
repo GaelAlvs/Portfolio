@@ -10,4 +10,4 @@ Possui responsividade, modo light e modo dark, tradução para português e ingl
 
 Possui o tema em modo Dark e modo Light para escolha do usuário
 
-É um site landing page com seção de sobre, projetos, trajetória e contato
+É um site landing page com seção de sobre, habilidades, projetos, trajetória e contato
